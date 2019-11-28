@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form>
+
+
+    <input type="text" id="amount"><br/> Amount<br/>
+
+
+    <select id="fc" > From Currency
+        <option value="VND" > VND</option>
+        <option value="USD" > USD</option>
+
+    </select><br/>
+
+    <select id="tc"> To Currency
+        <option value="USD">USD</option>
+        <option value="VND">VND</option>
+
+    </select><br/>
+    <button type="button" onclick= "convert()">Convert
+    </button>
+
+<p id = "myMoney"></p>
+<!--    <p id="myMoneyUsd"></p>-->
+</form>
+<script>
+    function convert() {
+              // var fromCurrency=document.getElementById("fc");
+        // var toCurrency=document.getElementById("tc");
+        // var money =document.getElementById("amount");
+
+        var fromCurrency= document.getElementById("fc").value;
+        var toCurrency=document.getElementById("tc").value;
+        var money = (document.getElementById("amount").value)*1;
+    if (fromCurrency === "VND" && toCurrency==="USD"){
+        total = money/23000;
+        document.getElementById("myMoney").innerText = total + "USD";
+    }
+
+    else if (fromCurrency === "USD" && toCurrency==="VND"){
+        total = money * 23000;
+        document.getElementById("myMoney").innerText = total + "VND";
+
+    }
+else{
+    document.getElementById("myMoney").innerText=money;
+    }
+
+    }
+
+
+
+</script>
+</body>
+</html>

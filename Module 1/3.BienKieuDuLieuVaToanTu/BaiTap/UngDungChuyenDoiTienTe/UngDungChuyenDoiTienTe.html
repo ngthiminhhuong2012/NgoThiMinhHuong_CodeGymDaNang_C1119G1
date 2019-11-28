@@ -4,7 +4,75 @@
     <meta charset="UTF-8">
     <title>Title</title>
 </head>
+<style>
+    table, th, td {
+        border: none ;
+        border-collapse: collapse;
+    }
+    th, td {
+        padding: 5px;
+    }
+    th {
+        text-align: left;
+    }
+</style>
 <body>
+<table style="width:100%">
+    <form action=/"action_page.php">
+        <tr>
+            <th> Amount</th>
+            <th>From Currency</th>
+            <th>To Currency</th>
+        </tr>
+        <tr>
+            <td>
+              <input type="number" name="Amount" value="1">
+<!--                <input id="Number" type="text" placeholder="Enter Number"required>-->
+                <div id=""
+
+
+                <div id="example"
+
+            </td>
+
+            <td>
+                <select id="fromCurrency"onclick="">
+                    <option value="USD">USD</option>
+
+                </select>
+            </td>
+       <td>
+           <button type="button">Convert</button>
+           <button value="Submit">
+           </button>
+           <button onclick="Convert()"></button>
+       </td>
+
+        </tr>
+    </form>
+</table>
+
+<script>
+    var example="";
+    var showExample=document.getElementById("show Example");
+    function cacualtion() {
+        document.getElementById("result".innerText=eval(example));
+
+    }
+    function submit1(e){
+        example+=e;
+        showExample.innerText=example;
+    }
+    function submit(amount, fromCurrency) {
+        var amount=document.getElementById("Amount");
+        alert(amount.value);
+        var fromCurrency=23000;
+        var totalMoney= amount * fromCurrency*1;
+
+    }
+</script>
+
+
 
 </body>
 </html>
