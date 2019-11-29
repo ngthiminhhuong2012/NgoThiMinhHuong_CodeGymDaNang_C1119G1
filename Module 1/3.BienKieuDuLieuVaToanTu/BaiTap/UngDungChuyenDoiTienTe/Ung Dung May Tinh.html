@@ -5,10 +5,39 @@
     <title>Title</title>
 </head>
 <body>
-<input type="button" value="btn1" onclick="=submit1(this.value"/>
-<input type="button" value="btn2" onclick="=submit2()"/>
-<input type="button" value="btn3" onclick="=submit3()"/>
-<input type="button" value="Caculation" onclick="=caculation()"/>
+<form>
+<input id="result" type="text"><br/>
+<input type="reset" value="C">
+<input type="button" value="1" onclick=" result.value += this.value"/>
+<input type="button" value="2" onclick=" result.value += this.value"/>
+<input type="button" value="3" onclick=" result.value += this.value"/>
+<input type="button" value="+" onclick=" result.value += this.value"/><br/>
+<input type="button" value="4" onclick=" result.value += this.value"/>
+<input type="button" value="5" onclick=" result.value += this.value"/>
+<input type="button" value="6" onclick="result.value += this.value"/>
+<input type="button" value="-" onclick=" result.value += this.value"/><br/>
+<input type="button" value="7" onclick="result.value += this.value"/>
+<input type="button" value="8" onclick="result.value += this.value"/>
+<input type="button" value="9" onclick="result.value += this.value"/>
+<input type="button" value="*" onclick="result.value += this.value"/><br/>
+<input type="button" value="0" onclick="result.value += this.value"/>
+<input type="button" value="." onclick="result.value += this.value"/>
+<input type="button" value="/" onclick="result.value += this.value"/>
+<input   type="button" value="=" onclick="caculation()"/>
+
+<br/>
+<p id="demo"></p>
+<!--<p id="demo2"></p>-->
+</form>
+<script>
+    function caculation() {
+        // document.getElementById("demo").innerText= eval(result.value);
+       document.getElementById("result").value+= "=" + eval(result.value);
+    }
+
+</script>
+
+
 
 </body>
 </html>
