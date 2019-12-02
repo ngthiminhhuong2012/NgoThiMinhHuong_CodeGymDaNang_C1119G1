@@ -10,18 +10,19 @@
     var height =  prompt("Enter your height");
     var bmi =  weight/Math.pow(height,2);
     alert("BMI =" +bmi);
-    if (bmi  < 18.5){
-        alert('Under Weight');
-        else if (bmi<25){
-            alert('Nomal');
-            else if(bmi < 30){
-                alert('Over Weight');
-            }
-            else {
-                alert('Obese');
-            }
+    if (bmi  < 18.5) {
+        alert('Under Weight')
+    }
+    else if (bmi<25) {
+        alert('Nomal');
 
-        }
+    }
+    else if(bmi < 30){
+        alert('Over Weight');
+    }
+    else {
+        alert('Obese');
+
     }
 
 

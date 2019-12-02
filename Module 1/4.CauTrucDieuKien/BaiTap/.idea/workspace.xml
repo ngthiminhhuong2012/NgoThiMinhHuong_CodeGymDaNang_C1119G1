@@ -2,21 +2,23 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="baf04095-2c0a-4a2c-88b2-12c66838edc1" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../../3.BienKieuDuLieuVaToanTu/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../3.BienKieuDuLieuVaToanTu/.idea/3.BienKieuDuLieuVaToanTu.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../3.BienKieuDuLieuVaToanTu/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../3.BienKieuDuLieuVaToanTu/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../3.BienKieuDuLieuVaToanTu/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../3.BienKieuDuLieuVaToanTu/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../3.BienKieuDuLieuVaToanTu/YeuCau1/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TinhChiSoCanNangCoThe.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ThucHanh/SwitchCase.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ThucHanh/ThucHanhLuyenTapVoiCauTrucIF.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ThucHanh/demoIfElse.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ThucHanh/login.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../3.BienKieuDuLieuVaToanTu/BaiTap/UngDungChuyenDoiTienTe/Ung Dung May Tinh.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../3.BienKieuDuLieuVaToanTu/BaiTap/UngDungChuyenDoiTienTe/Ung Dung May Tinh.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../3.BienKieuDuLieuVaToanTu/YeuCau1/Module1_NgoThiMinhHuong.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../3.BienKieuDuLieuVaToanTu/YeuCau1/Module1_NgoThiMinhHuong.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../3.BienKieuDuLieuVaToanTu/YeuCau1/Moudle1_NgoThiMinhHuong.html" beforeDir="false" afterPath="$PROJECT_DIR$/../ThucHanh/KiemTraNamNhuan.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Bai1LuyenTapCauTrucIfElse.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CauLenhSwitchCase.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DoYouLoveMe.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MayTinhDonGian.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/UngDungGoodFastCheap.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ThucHanh/Bai1LuyenTapVoiToanTu.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ThucHanh/Bai2LuyenTapCauTrucSwitchCase.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ThucHanh/Bai2LuyenTapToanTu.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ThucHanh/Bai2LuyenTapVoiToanTu.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ThucHanh/Bai3LuyenTapCauTrucSwitchCase.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ThucHanh/ClickChuot.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ThucHanh/LuyenTapVoiCauTrucSwitchCase.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ThucHanh/SuKienBanPhim.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ThucHanh/SuKienChuot.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TinhChiSoCanNangCoThe.html" beforeDir="false" afterPath="$PROJECT_DIR$/TinhChiSoCanNangCoThe.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ThucHanh/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../ThucHanh/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -39,7 +41,7 @@
   <component name="PropertiesComponent">
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../3.BienKieuDuLieuVaToanTu/YeuCau1/Module1_NgoThiMinhHuong.html" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../ThucHanh/SuKienBanPhim.html" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -64,6 +66,8 @@
       <option name="presentableId" value="Default" />
       <updated>1575013264139</updated>
       <workItem from="1575013266790" duration="1080000" />
+      <workItem from="1575039842569" duration="1672000" />
+      <workItem from="1575258002017" duration="11387000" />
     </task>
     <servers />
   </component>
@@ -75,7 +79,9 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>

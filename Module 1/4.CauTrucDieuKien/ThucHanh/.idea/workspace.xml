@@ -2,20 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="bfc448c7-71e8-4f86-8bda-e26e42165f97" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../../3.BienKieuDuLieuVaToanTu/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../3.BienKieuDuLieuVaToanTu/.idea/3.BienKieuDuLieuVaToanTu.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../3.BienKieuDuLieuVaToanTu/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../3.BienKieuDuLieuVaToanTu/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../3.BienKieuDuLieuVaToanTu/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../3.BienKieuDuLieuVaToanTu/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../3.BienKieuDuLieuVaToanTu/YeuCau1/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SwitchCase.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ThucHanhLuyenTapVoiCauTrucIF.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demoIfElse.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/login.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../3.BienKieuDuLieuVaToanTu/BaiTap/UngDungChuyenDoiTienTe/Ung Dung May Tinh.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../3.BienKieuDuLieuVaToanTu/BaiTap/UngDungChuyenDoiTienTe/Ung Dung May Tinh.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../3.BienKieuDuLieuVaToanTu/YeuCau1/Module1_NgoThiMinhHuong.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../3.BienKieuDuLieuVaToanTu/YeuCau1/Module1_NgoThiMinhHuong.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../3.BienKieuDuLieuVaToanTu/YeuCau1/Moudle1_NgoThiMinhHuong.html" beforeDir="false" afterPath="$PROJECT_DIR$/KiemTraNamNhuan.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Bai1LuyenTapVoiToanTu.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Bai2LuyenTapCauTrucSwitchCase.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Bai2LuyenTapToanTu.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Bai2LuyenTapVoiToanTu.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Bai3LuyenTapCauTrucSwitchCase.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ClickChuot.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LuyenTapVoiCauTrucSwitchCase.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SuKienBanPhim.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SuKienChuot.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BaiTap/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../BaiTap/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BaiTap/TinhChiSoCanNangCoThe.html" beforeDir="false" afterPath="$PROJECT_DIR$/../BaiTap/TinhChiSoCanNangCoThe.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -63,6 +61,11 @@
       <option name="presentableId" value="Default" />
       <updated>1575001572958</updated>
       <workItem from="1575001577565" duration="5203000" />
+      <workItem from="1575043820726" duration="2236000" />
+      <workItem from="1575092246395" duration="238000" />
+      <workItem from="1575092492206" duration="9104000" />
+      <workItem from="1575250189622" duration="2655000" />
+      <workItem from="1575253385519" duration="4599000" />
     </task>
     <servers />
   </component>
@@ -74,7 +77,9 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>
