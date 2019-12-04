@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    var previousFirst = 0;
+    var previousSecond = 1;
+    next = 1;
+    for (var i = 2; i <= 1000; i++) {
+        next = previousFirst + previousSecond;
+        if (next%5===0){
+            break;
+        }
+        previousFirst = previousSecond;
+        previousSecond = next;
+    }
+    document.write(next + "<br>");
+</script>
+</body>
+</html>

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    var previousFirst = 0 ;
+    var previousSecond = 1;
+    next = 1;
+    for(var i = 2; i <= 20 ; i++){
+        document.write(next + "<br>");
+        next = previousFirst + previousSecond;
+        previousFirst= previousSecond;
+        previousSecond=  next;
+    }
+
+</script>
+</body>
+</html>
