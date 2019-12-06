@@ -57,9 +57,9 @@
         moneyPerday -= 10;
     else
         moneyPerday -= 0;
-    if ((ageCustomer >= 30) & (addressCustomer === "Đà Nẵng"))
+    if ((ageCustomer >= 30) && (addressCustomer === "Đà Nẵng"))
         moneyPerday -= 2;
-    else if ((20 <= ageCustomer <= 30) & (addressCustomer === "Đà Nẵng"))
+    else if ((20 <= ageCustomer <= 30) && (addressCustomer === "Đà Nẵng"))
         moneyPerday -= 1;
     var  option1 = (" nameCustomer: " + nameCustomer
         + "\n emailCustomer: " + emailCustomer + "\n idCard: " + idCard
@@ -67,12 +67,21 @@
         + typeCustomer + "\n discount: " + discount + "\n numberOfAccompanying: " + numberOfAccompanying
         + "\n typeRoom: " + typeRoom
         + "\n rentDay: " + rentDay + "\n typeServices: " + typeServices);
-    var option2 = ("Choose information customer you want to edit: " + "\n 1. nameCustomer: " + nameCustomer
-        + "\n 2. emailCustomer: " + emailCustomer + "\n 3. idCard: " + idCard
-        + "\n 4. birthdayCustomer: " + birthdayCustomer + "\n 5. addressCustomer: " + addressCustomer + "\n 6. typeCustomer: "
-        + typeCustomer + "\n 7. discount: " + discount + "\n 8. numberOfAccompanying: " + numberOfAccompanying
-        + "\n 9. typeRoom: " + typeRoom
-        + "\n 10 .rentDay: " + rentDay + "\n 11. typeServices: " + typeServices);
+    var option2 = ("Choose information customer you want to edit: " + "\n "
+        + "1. nameCustomer: " + nameCustomer + "\n "
+        + "2. emailCustomer: " + emailCustomer + "\n" +
+        " 3. idCard: " + idCard + "\n " +
+        "4. birthdayCustomer: " + birthdayCustomer + "\n " +
+        "5. addressCustomer: " + addressCustomer + "\n" +
+        " 6. typeCustomer: "
+        + typeCustomer + "\n " +
+        "7. discount: " + discount + "\n " +
+        "8. numberOfAccompanying: " + numberOfAccompanying
+        + "\n " +
+        "9. typeRoom: " + typeRoom
+        + "\n " +
+        "10 .rentDay: " + rentDay + "\n " +
+        "11. typeServices: " + typeServices);
     var option3 = (" ameCustomer: " + nameCustomer
         + "\n emailCustomer: " + emailCustomer + "\n idCard: " + idCard
         + "\n birthdayCustomer: " + birthdayCustomer + "\n addressCustomer: " + addressCustomer + "\n typeCustomer: "
