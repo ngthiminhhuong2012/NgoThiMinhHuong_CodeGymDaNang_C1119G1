@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    var numberOfCustomer;
+    // var x = new Array(100);
+    var arrNameCustomer = ["Luc", "Ben", "Lat", "Man", "Duck", "Dog", "Big", "Log", "Can", "Gld"];
+    var option = prompt("1. Add New Customer \n" +
+        "2. Delete Customer")
+    //option1
+    if (option === "1") {
+        numberOfCustomer = prompt("Enter the number of customer you want to add");
+    }
+    for (var i = 0; i <= numberOfCustomer; i++) {
+        var name;
+     name  = arrNameCustomer.push(prompt("Enter Name Customer "))  ;
+    }
+
+    // alert(showInformation());
+
+    // //Săp xep theo thu tu
+    // arrNameCustomer.sort();
+    // // hien thi danh sach sau khi sort
+    // alert('List after sorting');
+    // for()
+function showInformation() {
+    var result="";
+    for(var i=0;i<arrNameCustomer.length;i++){
+        result += i + 1 + ". " + arrNameCustomer[i] +"\n";
+    }
+    return result;
+}
+//sorting list
+    arrNameCustomer.sort();
+    // alert(showInformation());
+
+//option 2
+    if (option === "2") {
+        a = prompt("choose the customer you want to delete" + "\n" + showInformation());
+    }
+    arrNameCustomer.splice(a-1,1);
+    function showDeleteCustomer() {
+        var result1 = "";
+        for (var k = 0; k < arrNameCustomer.length; k++) {
+            result1 += k + 1 + ". " + arrNameCustomer[k] + "\n";
+        }
+        return result1;
+    }
+    alert(showDeleteCustomer());
+</script>
+</body>
+</html>
