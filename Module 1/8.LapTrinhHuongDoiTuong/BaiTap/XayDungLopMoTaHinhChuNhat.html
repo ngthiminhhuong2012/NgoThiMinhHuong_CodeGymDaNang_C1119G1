@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let Rectangle = function (width, height) {
+        this.width = width;
+        this.height = height;
+        // phuong thuc tra ve chieu dai chieu rong cua hinh chu nhat
+        this.getWidth = function () {
+            return this.width;
+        };
+        this.getHeight = function () {
+            return this.height;
+        };
+// Tinh dien tich va chu vi
+        this.area = function () {
+            return this.width * this.height;
+        };
+        this.perimeter = function () {
+            return (this.width + this.height)* 2;
+        };
+        // thay doi gia tri cua chieu dai va chieu rong
+        this.setValue = function (width, height) {
+            this.width = width;
+            this.height = height;
+        };
+    };
+    let rectangle = new Rectangle(5, 6);
+     rectangle.setValue(7, 8);
+     rectangle.getHeight();
+     rectangle.getWidth();
+     s = rectangle.area();
+     P= rectangle.perimeter();
+    document.write( s);
+
+</script>
+</body>
+</html>

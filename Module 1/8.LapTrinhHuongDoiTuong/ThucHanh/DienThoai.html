@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let Mobile = function () {
+        //set Pin
+        this.setPin = function (statusPin) {
+            this.statusPin = statusPin;
+        };
+        //get Pin
+        this.getPin = function () {
+            return this.statusPin;
+
+        };
+        //set MessTyping
+        this.setMessTyping = function (messTyping) {
+            this.messTyping = messTyping;
+
+        };
+        //get MessTyping
+        this.getMessTyping = function () {
+            return this.messTyping;
+        };
+        //set messSent
+        this.setMessSent = function (messSent) {
+            this.messSent = messSent;
+        };
+        //get messSent
+        this.getMessSent = function () {
+            return this.messSent;
+
+        };
+        //set messReceive
+        this.setMessReceive = function (messReceive) {
+            this.messReceive = messReceive;
+        };
+        //get messReceive
+        this.getMessReceive = function () {
+            return this.messReceive;
+        };
+        //set turn on
+        this.SetTurnOn = function (turnOn) {
+            this.turnOn = turnOn;
+
+        };
+        //get turn on
+        this.getTurnOn = function () {
+            return this.turnOn;
+        };
+
+        // xay dung phuong thuc kiem tra dien thoai bat hay tat
+        this.checkStatus = function () {
+            if (this.statusPin <= 0) {
+                alert("OF");
+            } else {
+                alert("On");
+            }
+        };
+        // xay dung phuong thuc bat tat dien thoai
+        this.turnOn = function () {
+            if (this.turnOn === true) {
+                alert("On");
+            } else {
+                alert("Of");
+            }
+
+        };
+        // phuong thuc xac pin dien thoai
+        this.chargePin = function () {
+            if (this.statusPin < 100) {
+                alert("charging");
+            } else if (this.statusPin === 100) {
+                alert("Finish");
+            }
+        };
+    };
+    let iphone = new Mobile(50,20,20,20,true);
+     iphone.setPin(50);
+     alert(iphone.getPin());
+     alert(iphone.chargePin());
+
+
+</script>
+</body>
+</html>

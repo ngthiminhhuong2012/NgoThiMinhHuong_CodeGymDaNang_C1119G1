@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+Add New Product <br>
+<input type="text" placeholder="New Product" id="New Product">
+<input type="button" value="Add" onclick=addProduct()><br>
+<input type="button" value="Delete" onclick=deleteProduct()>
+Display All Product <br>
+
+<script>
+    var productList = ["Sony Experia", "SamSung Galaxy", "Nokia 6", "Xiaomi Red", "Oppo A74"];
+
+    function displayProduct() {
+        var result = "";
+        for (var i = 0; i < productList.length; i++) {
+            result += i + 1 + ". " + productList[i] + "<br>";
+        }
+        document.write(result);
+    }
+
+    //add product
+    function addProduct(newProduct) {
+       newProduct = document.getElementById("New Product").innerHTML;
+        productList.push(newProduct);
+        return productList;
+    }
+    productList = addProduct(newProduct);
+    displayProduct(addProduct());
+
+    //delete product
+    function deleteProduct() {
+        var deleteElment = prompt("Enter the Product you want to delete");
+        var i = productList.indexOf(deleteElment);
+        productList.splice(i, 1);
+        return productList;
+    }
+
+    displayProduct(deleteProduct());
+</script>
+</body>
+</html>

@@ -6,37 +6,21 @@
 </head>
 <body>
 <script>
-    var
-    var num = 0;
-    var maxCheck = 1000; // maxCheck limit till which you want to find prime numbers
-    boolean isPrime = true;
+    function isPrime(){
 
-    //Empty String
-    // String primeNumbersFound = "";
-
-    //Start loop 1 to maxCheck
-    for (i = 1; i <= maxCheck; i++) {
-        isPrime = CheckPrime(i);
-        if (isPrime) {
-            primeNumbersFound = primeNumbersFound + i + " ";
-        }
-    }
-    document.write("Prime numbers from 1 to " + maxCheck + " are:");
-
-   function boolean CheckPrime(int numberToCheck) {
-        var remainder;
-        for (var i = 2; i <= numberToCheck / 2; i++) {
-            remainder = numberToCheck % i;
-            //if remainder is 0 than numberToCheckber is not prime and break loop. Elese continue loop
-            if (remainder == 0) {
-                return false;
+            for (var num = 1; num < 1000; ++num) {
+                var count = 0; // đếm số ước của num
+                for (var i = 2; i <= Math.sqrt(num); i++) {
+                    if (num % i === 0) {
+                        count++;
+                    }
+                }
+                if (count === 0 && num > 1)
+                    alert(num);
             }
-        }
-        return true;
-
     }
 
-    }
+
 </script>
 
 </body>

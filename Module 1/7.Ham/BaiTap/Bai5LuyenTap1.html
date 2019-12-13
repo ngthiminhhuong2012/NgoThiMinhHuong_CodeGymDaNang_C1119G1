@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    var arr1NameStar = ["Polaris", "Aldebaran", "Deneb", "Vega", "Altair", "Dubhe" ,  "Regulus"];
+    var arr2NameStar = ["Ursa Minor", "Tarurus", "Cygnus", "Lyra", "Aquila", "Ursa Major" ,"Leo"];
+    function checkArray() {
+        var star = prompt("Enter the Star:");
+        for(var i = 0; i < arr1NameStar.length; i++){
+            if (arr1NameStar[i] === star){
+                return arr2NameStar[i];
+            }
+            else {
+                return false;
+            }
+        }
+    }
+    alert(checkArray());
+
+</script>
+</body>
+</html>

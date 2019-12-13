@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let Temperature = function (valNum) {
+        this.valNum = valNum;
+        // phuong thuc tra ve tri so nhiet do
+        this.getVal = function () {
+            return this.valNum;
+        };
+        // phuong thuc chuyen doi nhiet to tu do C sang do F
+        this.converCtoF = function () {
+            return this.valNum * 1.8 + 32;
+        };
+        //phuong thuc chuyen doi tu C sang do K
+        this.convertCtoK = function () {
+            return this.valNum + 273.1;
+        };
+        // phuong thuc thiet lap  gia tri do C
+        this.setVal = function (valNum) {
+            this.valNum = valNum;
+        };
+    };
+
+    let temperature = new Temperature(25);
+
+    alert(temperature.getVal());
+    alert(temperature.converCtoF());
+    alert(temperature.convertCtoK());
+
+
+</script>
+</body>
+</html>

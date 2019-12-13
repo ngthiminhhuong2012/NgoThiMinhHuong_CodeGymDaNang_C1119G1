@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    //task 1.1
+    function displayMainMenu() {
+        var option = prompt("1.Add New Customer\n "+
+            "2. Display Information Customer\n" +
+            "3.Edit Information Customer \n" +
+            "4. Delete Customer \n" +
+            "5.Exit");
+    }
+
+    alert(displayMainMenu());
+
+    switch(option){
+        case "1": alert(addNewCustomer());
+        case "2": alert(displayInformationCustomer());
+        case 3: editInformationCustomer();
+        case 4: deleteCustomer();
+        case 5: exit();
+    }
+    // //task 1.2
+    function addNewCustomer() {
+        var name = prompt('Enter Customer Name:');
+        var idCard = prompt('Enter ID Customer');
+        var birthday = prompt('Enter Birthday Customer');
+        var email = prompt('Enter Email Customer');
+        var address = prompt('Enter Address Customer');
+        var typeOfCustomer = prompt('Enter Type Customer');
+        var discount = prompt('Enter Discount');
+        var numberOfCustomer = prompt('Enter Number Of Customer');
+        var rentDay = prompt('Enter Rent Days');
+        var typeOfRoom = prompt('Enter Type of Room');
+        var typeOfSevice = prompt('Enter Type of Sevice' +
+            "\n 1. Villa"
+            + "\n 2. House"
+            + "\n 3. Room");
+        alert("Name: " + name + "\nID Customer: " + idCard +
+            "\nBirthday: " + birthday +
+            "\nEmail Customer: " + email +
+            "\nAddress " + address +
+            "\nType Customer: " + typeOfCustomer +
+            "\nDiscount: " + discount +
+            "\nNumber Of Customer: " + numberOfCustomer +
+            "\nRent Days: " + rentDay +
+            "\nType of Room: " + typeOfRoom +
+            "\nEnter Type of Sevice: " + typeOfSevice);
+
+        return displayMainMenu();
+    }
+    alert(addNewCustomer());
+
+    //task 1.3
+    function displayInformationCustomer() {
+
+        var result = "";
+        for (var i = 0; i < arrListCustomers.length; i++) {
+            result += i + 1 + ". " + arrListCustomers[i] + "\n";
+        }
+        return result;
+    }
+        alert(displayInformationCustomer());
+
+
+
+</script>
+</body>
+</html>
