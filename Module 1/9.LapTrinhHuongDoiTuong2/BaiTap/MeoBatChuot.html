@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    var Rat = function () {
+        this.setName = function (name) {
+            this.name = name;
+        };
+        this.getName = function () {
+            return this.name;
+        };
+        this.setWeight = function (weight) {
+            this.weight = weight;
+        };
+        this.getWeight = function () {
+            return this.weight;
+        };
+        this.setSpeed = function (speed) {
+            this.speed = speed;
+        };
+        this.getSpeed = function () {
+            return this.speed;
+        };
+        this.live = function () {
+            this.status = true;
+        };
+        this.dead = function () {
+            this.status = false;
+        };
+        this.say = function (string) {
+            return string;
+        };
+
+    };
+    var Cat = function () {
+        this.setName = function (name) {
+            this.name = name;
+        };
+        this.getName = function () {
+            return this.name;
+        };
+        this.setWeight = function (weight) {
+            this.weight = weight;
+        };
+        this.getWeight = function () {
+            return this.weight;
+        };
+        this.setMaxSpeed = function (maxSpeed) {
+            this.maxSpeed = maxSpeed;
+        };
+        this.getMaxSpeed = function () {
+            return this.maxSpeed;
+        };
+        this.say = function (string) {
+            return string;
+        };
+        this.getRat = function (rat) {
+            if (this.maxSpeed > rat.speed) {
+                alert(" get one rat");
+                return 1;
+            } else {
+                alert("Dont get  rat");
+            }
+
+        };
+        this.eat = function (rat) {
+            if (rat.live) {
+                return this.weight++;
+            } else {
+                return this.weight;
+            }
+        };
+    };
+    var rat = new Rat();
+    var cat = new Cat();
+    cat.setMaxSpeed(20);
+    alert(cat.getMaxSpeed());
+    rat.setSpeed(30);
+    alert(rat.getSpeed());
+    cat.getRat(rat);
+    cat.setWeight(8);
+    alert(cat.getWeight());
+    cat.eat(rat);
+    alert(cat.eat(rat));
+</script>
+</body>
+</html>

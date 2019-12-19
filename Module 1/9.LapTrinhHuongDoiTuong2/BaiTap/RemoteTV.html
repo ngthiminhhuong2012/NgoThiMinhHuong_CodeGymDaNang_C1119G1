@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    var Remote = function () {
+        this. setCode = function (code) {
+            this.code = code;
+        };
+        this.getCode = function () {
+            return this.code;
+        };
+        this.changeVolume = function (volume) {
+            this.volume = volume;
+            return this.volume ++;
+
+        };
+        this.moveChannel = function(tivi) {
+            if(tivi.on){
+            }
+        };
+
+    };
+    var Tivi = function () {
+       this.setChannelCurrent = function (channelCurrent) {
+           this.channelCurrent = channelCurrent;
+       };
+       this.getChannelCurrent = function () {
+           return this.channelCurrent;
+       };
+       this.setVolumeCurrent = function (volumeCurrent) {
+           this.volumeCurrent = volumeCurrent;
+       };
+       this.getVolumeCurrent = function () {
+           return this.volumeCurrent;
+       };
+       this.on = function () {
+           this.status = true;
+       };
+       this.of = function () {
+           this.status = false;
+       };
+       // this.control = function () {
+       //     if()
+       //
+       // }
+       //
+
+    };
+    var tivi = new Tivi();
+    var remote = new Remote();
+    remote.setCode();
+    remote.getCode();
+    alert(remote.getCode());
+    tivi.on.remote.get();
+</script>
+</body>
+</html
