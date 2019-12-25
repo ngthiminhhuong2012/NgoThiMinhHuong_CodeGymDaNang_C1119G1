@@ -5,10 +5,69 @@
     <title>Title</title>
 </head>
 <body>
+<script>
+    var arrName = [];
+    var arrBirthday = [];
+    var arrIdCard =[];
+    var arrEmmail = [];
+    var arrTypeOfCustomer =[];
+    var arrTypeOfRomm=[];
+    var arrTypeOfService=[];
+    var arrRentDay=[];
+function displayMainMenu() {
+    var option = prompt("1.Add new Customer \n"+
+    "2. Display Information Customer \n" +
+    "3. Edit Information Customer \n" +
+    "4. Delete Customer \n" +
+    "5. Exit");
+    switch(option) {
+        case "1":
+            addNewCustomer();
+            break;
+        case "2":
+            displayInformationCustomer();
+            break;
+        case"3":
+            editInformationCustomer();
+            break;
+        case "4":
+            deleteCustomer();
+            break;
+        case "5":
+            exit();
+            break;
+            displayMainMenu();
+
+
+    }
+}
+function addNewCustomer() {
+    arrName.push(prompt("Enter Name:"));
+    arrBirthday.push(prompt("Enter birthday:"));
+    arrEmmail.push(prompt("Enter email:"));
+    arrIdCard.push(prompt("Enter Id Card:"));
+    arrTypeOfCustomer.push(prompt("Enter Type of Service:"));
+    arrTypeOfRomm.push(prompt("Enter Type of Room:"));
+    arrTypeOfService.push(prompt("Enter type of Service:"));
+displayMainMenu();
+}
+function displayCustomer() {
+    var number = prompt("1. Get Name and IdCard \n"+
+    "2. Back to menu");
+    switch (number) {
+        case "1":
+            displayInformationCustomer();
+        case "2":
+            displayMainMenu();
+
+    }
+}
+function displayInformationCustomer() {
+return arrName[index]
+}
+</script>
 
 
 
-<script type="text/javascript" src="YeuCau5.js"></script>
-<script type="text/javascript" src="Run.js"></script>
 </body>
 </html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    //nhap mang a gom n phan tu so nguyen
+    var sum = 0;
+
+    var arr =[1, 2, 4, 5, 6, 7, 9, 0, 8];
+    //tinh tong so l3e trong mang
+    for(var i = 0; i < arr.length ; i++) {
+        if (arr[i] %2 !==0){
+            sum = sum + arr[i];
+        }
+    }
+    alert(sum);
+    //Nhap k, tim xem k cos tron mang ko. Neu co chi ra phan tu o vi tri dau tien
+
+    var  k = parseInt(prompt("Enter k: "));
+    function search(arr,k) {
+        for (var j = 0; j < arr.length; j++) {
+            if (arr[j] === k) {
+                return j;
+            }
+        }
+        return -1;
+    }
+    alert(search(arr,k));
+    //sap sep mang theo thu tu tang dan
+    function sapxepTangDan(arr) {
+        var temp = 0;
+        for (var h = 0; h < arr.length; h++) {
+            for(let i=h+1;i<arr.length;i++)
+                if (arr[h] > arr[i]) {
+                    temp = arr[h];
+                    arr[h] = arr[i];
+                    arr[i] = temp;
+
+                }
+            }
+        return arr;
+    }
+   alert(sapxepTangDan(arr));
+    //chen phan tu vao mang a sao cho mang a vaan dam bao tang dan va xuat lai mang a
+     var x = parseInt(prompt("nhap so can them vao mang:"));
+     arr.push(x);
+     sapxepTangDan(arr);
+     alert(arr);
+
+</script>
+</body>
+</html>

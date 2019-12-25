@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+var n = prompt("Enter n:");
+function giaiThua() {
+    var giaiThua = 1;
+    for ( var i = 2; i<=n; i++){
+        giaiThua *=i;
+    }
+    return giaiThua;
+}
+alert(giaiThua());
+function  tong() {
+    var tong = -1;
+    for(var j = 2; j <= n;j++){
+        tong = 15 + tong + Math.pow(-1,j)/giaiThua(j)
+    }
+    return tong;
+}
+alert(tong())
+
+
+</script>
+</body>
+</html>

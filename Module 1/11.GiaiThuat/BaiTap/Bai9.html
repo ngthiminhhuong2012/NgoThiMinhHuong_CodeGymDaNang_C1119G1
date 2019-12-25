@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    var str = prompt(" Enter the String:");
+    var upperCaseStr = str.toUpperCase();
+    alert(upperCaseStr);
+    var lowerCaseStr = str.toLowerCase();
+    alert(lowerCaseStr);
+    function reverseStr1(){
+        arr= str.split("");
+        alert(arr);
+        var arrStr = arr.reverse();
+       var reverseStr = arrStr.join("");
+        return reverseStr;
+    }
+    alert(reverseStr1());
+
+    function reverStr2() {
+        var newStr ="";
+        for(var i = str.length-1;i>=0;i--){
+            newStr +=str[i];
+        }
+        return newStr;
+    }
+    alert(reverStr2());
+</script>
+</body>
+</html>

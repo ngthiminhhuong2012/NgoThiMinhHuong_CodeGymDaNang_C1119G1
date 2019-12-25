@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    var Employee = function () {
+        this. setName = function (name) {
+            this.name = name;
+        };
+        this.getName = function () {
+            return this.name;
+        };
+        this.setAddress = function (address) {
+            this.address = address;
+
+        };
+        this.getAddress = function () {
+            return this.address;
+
+        };
+        this.setUserName = function (userName) {
+            this.userName = userName;
+        };
+        this.getUserName = function () {
+            return this.userName;
+
+        };
+        this.setPassWord = function (password) {
+            this.password = password;
+        };
+        this.getPassWord = function () {
+            return this.password;
+        };
+
+    };
+    var employee = new Employee();
+    menu1();
+
+    function menu1() {
+        var menu = prompt("1.Login \n" + "2. Register \n"+ "3. Exit \n");
+        switch (menu) {
+            case "1":login();
+                break;
+            case "2": register();
+                break;
+            default:
+                break;
+        }
+        menu1();
+
+    }
+
+    function register() {
+        var username = prompt("enter user name");
+        employee.setUserName(username);
+        //employee.getUserName();
+        var name = prompt("enter name");
+        employee.setName(name);
+       // employee.getName();
+        var pass= prompt("Enter pass");
+        employee.setPassWord(pass);
+       // employee.getPassWord();
+        var add = prompt("Enter pass");
+        employee.setAddress(add);
+       // employee.getAddress();
+
+    }
+    function menu2() {
+        var nhap = prompt("1. Show Information \n" + "2. Logout out \n"+ "3. Exit")
+         switch(nhap){
+             case "1": showInformation();
+             break;
+             case "2": menu1();
+             break;
+             default:
+                 break;
+         }
+    }
+
+    function login() {
+        var a = prompt("nhap a");
+        employee.getUserName();
+        if(a !== employee.getUserName()){
+            alert("user name ko dung")
+        }
+        else{
+            alert("Login complete");
+            alert(menu2());
+        }
+    }
+    function showInformation() {
+        var xuatName = employee.getUserName();
+       var xuarUserName =employee.getName();
+        var address = employee.getAddress();
+        var pss = employee.getPassWord();
+        alert(xuatName);
+        alert(xuarUserName);
+        alert(address);
+        alert(pss);
+    }
+</script>
+</body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    var str = prompt("Enter String:");
+   var arrSplit = str.split("");
+
+    //in moi tu moi hang
+    for (var i = 0; i < arrSplit.length ;i++){
+        document.write(arrSplit[i]+"</br>");
+    }
+    //dem so tu trong cau
+    function dem() {
+        var count = 0;
+        for (var j = 0; j < str.length; j++) {
+            if (str.charAt(j) !==" ") {
+                count++;
+            }
+        }
+        return count;
+    }
+  //  var charFind = prompt("nhap ki tu can kiem");
+    alert(dem());
+    // dua ra bang xuat hien tan so cac tu
+    function demTanSo(word) {
+        var tanSo = 0;
+        for (var i = 0; i < str.length; i++) {
+            if (str.charAt(i) === word) {
+                tanSo ++
+            }
+        }
+        return tanSo;
+    }
+    var word = prompt("Enter a word:");
+    alert(demTanSo(word));
+//dua ra tan so xua var temp = prompt('nhập chuỗi: ');
+
+
+</script>
+</body>
+</html>

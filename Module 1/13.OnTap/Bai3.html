@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    // xu ly kieu chuoi
+    var number = prompt("nhap so nguyen 6 chu so:");
+
+    function isCheckNumber(number) {
+        var sum = parseInt(number.charAt(0)) + parseInt(number.charAt(1))+ parseInt(number.charAt(2));
+        alert(sum);
+        var tich = parseInt(number.charAt(3)) * parseInt(number.charAt(4) )* parseInt(number.charAt(5));
+        alert(tich);
+        if (sum === tich) {
+            return true;
+        } else {
+            return false;
+        }
+    }
+    alert(isCheckNumber(number));
+    // xu ly kieu so
+    function checkNumber(number) {
+        do{
+            var soTach = number % 10;
+            number = parseInt(number / 10);
+            var sum = sum + soTach;
+            alert(soTach);
+
+        }
+        while(number !==0);
+        
+    }
+</script>
+</body>
+</html>
