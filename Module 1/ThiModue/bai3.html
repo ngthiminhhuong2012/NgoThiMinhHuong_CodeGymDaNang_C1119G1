@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    var arr=[];
+    var arr = [10,5,2,8,-1,6,8,10];
+    function findMaxScore(arr) {
+        var max = arr[0];
+        for(var i=0;i<arr.length;i++){
+            if(max < arr[i]){
+                max = arr[i];
+            }
+        }
+        return max;
+    }
+    max = findMaxScore(arr);
+    alert(findMaxScore(arr));
+    index = arr.lastIndexOf(max);
+    alert(index);
+</script>
+
+</body>
+</html>

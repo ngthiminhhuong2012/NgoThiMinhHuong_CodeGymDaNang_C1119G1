@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    //task 1
+    var name = prompt("Enter name of customer:");
+    var idCard = prompt("Enter Id Card:");
+    var birthDay = prompt("Enter birthday:");
+    var email = prompt("Enter email:");
+    var address = prompt("Enter address:");
+    var typeOfCustomer = prompt("Enter type of Customer:");
+    var discount = prompt("Enter discount:");
+    var rentDay = prompt("Enter rent day:");
+    var typeOfService = prompt("Enter type of Service:" + "\n" + "1. Villa" + "\n"+ "2. House"+ "\n" + "3. Room");
+    var typeofRoom = prompt("Enter type of Room:");
+    // task 2
+    var Villa = 500;
+    var House = 300;
+    var Room = 100;
+    var totalMoney = 500 * parseInt(rentDay) * (1 - parseInt(discount)/100);
+    alert(name +"\n" + idCard + "\n"+birthDay+"\n"+email+"\n"+address+"\n"+typeOfCustomer+"\n"+discount+"\n"+
+    rentDay +"\n"+typeOfService+"\n"+typeofRoom+"\n"+totalMoney);
+
+</script>
+
+</body>
+</html>

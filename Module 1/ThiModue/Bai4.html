@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    var HocSinh = function () {
+        this.SetSoThuTu = function (soThuTu) {
+            this.soThuTu = soThuTu;
+        };
+        this.GetSoThuTu = function () {
+            return this.soThuTu;
+        };
+        this.SetHoVaTen = function (hoVaTen) {
+            this.hoVaTen = hoVaTen;
+        };
+        this.GetHoVaTen = function () {
+            return this.hoVaTen;
+        };
+        this.setNgaySinh = function (ngaySinh) {
+            this.ngaySinh = ngaySinh;
+        };
+        this.GetNgaySinh = function () {
+            return this.ngaySinh;
+        };
+        this.setDiemTrungBinh = function (diemTrungBinh) {
+            this.diemTrungBinh = diemTrungBinh;
+        };
+        this.getDiemTrungBinh = function () {
+            return this.diemTrungBinh;
+        };
+    };
+    var hocSinh = new HocSinh();
+    hocSinh.SetSoThuTu(1);
+    hocSinh.SetHoVaTen("Huong");
+    hocSinh.setNgaySinh("20/12/1987");
+    hocSinh.setDiemTrungBinh(3);
+    function showInformation() {
+        var thuTu = hocSinh.GetSoThuTu();
+        alert(thuTu);
+        var hoVaTen = hocSinh.GetHoVaTen();
+        alert(hoVaTen);
+        var ngaySinh = hocSinh.GetNgaySinh();
+        alert(ngaySinh);
+        var diemTrungBinh = hocSinh.getDiemTrungBinh();
+        alert(diemTrungBinh);
+
+    }
+    showInformation();
+    function kiemTra() {
+        var diemTrungBinh = hocSinh.getDiemTrungBinh();
+        if(diemTrungBinh > 8){
+            alert(" La Hoc Sinh Kha");
+        }
+        else if(diemTrungBinh >= 6.5){
+            alert(" La Hoc Sinh Kha");
+    }
+        else if(diemTrungBinh >=5){
+            alert("La Hoc Sinh Trung Binh");
+        }
+        else if(diemTrungBinh >=3.5){
+            alert("La Hoc Sinh Yeu");
+        }
+        else {
+            alert(" La Hoc Sinh Kem");
+        }
+    }
+    kiemTra();
+
+</script>
+</body>
+</html>
